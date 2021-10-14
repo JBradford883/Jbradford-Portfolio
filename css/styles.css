@@ -21,20 +21,19 @@ Secondary Color (Light Coral Red): #f08080;
 }
 
 body {
-  background-color: #B0C4DE;
+  background-color: #F8F8FF;
   font-family: var(--primary-font);
   font-weight: var(--body-weight);
 }
 
 /******** Navigation ********/
-.navbar-nav{
+.container-fluid {
   text-align: center;
 }
 
-.top-nav {
-  flex: 35;
-  margin-left: 25px;
-  margin-right: 25px;
+.nav-brand {
+  color: #ffffff;
+  margin-left: 10px;
 }
 
 .navbar-social {
@@ -48,6 +47,7 @@ body {
   margin-left: auto; 
   margin-right: 0;
   font-size: 20px;
+  justify-content: center;
 }
 
 .navbar-social__logo{
@@ -57,9 +57,9 @@ body {
 
 /*********** Header *************/
 .container-fluid-top {
-  padding: 10% 17% 10%;
-  margin-bottom: 5rem;
-  background-color: #fff;
+  padding: 10% 15% 5%;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
 }
 
 .about-section {
@@ -78,21 +78,35 @@ body {
   line-height: 1.2;
 }
 
-/********* ABOUT ********/
-.stack-icon {
-  max-height: 40px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.profile-image {
+  width: 425px;
+  box-shadow: 0px 1px 8px #888888
 }
 
-.stack-icons-container {
-  margin: 0 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
+/* Portfolio */
+.portfolio {
+  box-shadow: 0px 1px 8px #888888
+}
+
+.portfolio h1{
+  font-size: 4.5rem;
+  line-height: 1.5;
+  font-weight: var(--headline-weight);
+}
+
+.portfolio-image {
+  width: 525px;
+}
+
+/********* ABOUT ********/
+.stack-icon {
+  max-height: 50px;
+  margin: 15px;
+  margin-bottom: 30px;
+}
+
+.aboutMe-skills {
+  text-align: center;
 }
 
 
@@ -125,8 +139,9 @@ body {
   color: white;
 }
 
-.projects {
+.projects-card {
   text-align: center;
+  justify-content: center;
 }
 
 .project-image__card {
@@ -135,8 +150,57 @@ body {
   box-shadow: 0px 1px 4px #888888
 }
 
-/******* MODALS ***********/
+/* Horizontal Rule */
+.latest-work {
+  color: #808080;
+  display: flex;
+  align-items: center; /* vertically center lines */
+}
 
+.latest-work::before,
+.latest-work::after {
+  content: '';
+  flex: 1; /* expand lines as much as possible */
+  background: #ccc;
+  height: 1px;
+}
+
+span {
+  padding: 0 1em; /* slight padding between line and text */
+}
+
+/******* CONTACT ***********/
+.contact{
+  color: #ffffff;
+}
+
+.contact-icon{
+  width: 55px;
+  margin: 10px;
+}
+
+.container-fluid-bottom {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #212529;
+  box-shadow: 0px 1px 8px #888888
+}
+
+.footer-copyright{
+  font-size: 10px;
+}
+
+/******* MODALS ***********/
+.project-image__modal {
+  width: 65%;
+  margin-top: 1rem;
+  box-shadow: 0px 1px 4px #888888
+}
+
+.modal-title {
+  color: #25408f;
+  font-weight: 900;
+}
 
 /******* Responsive Elements *********/
 @media (max-width: 1000px) {
@@ -152,5 +216,84 @@ body {
 
   .project-image {
     width: 75%;
+  }
+
+  .portfolio-image {
+    width: 75%;
+  }
+
+  .stack-icon {
+    max-height: 50px;
+  }
+
+  .stack-icons-container {
+    /* margin: 10% 10%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .contact-icon{
+    width: 50px;
+    margin: 10px;
+  }
+
+  .container-fluid-top {
+    padding: 5% 10% 10%;
+    margin-bottom: 5rem;
+    background-color: #ffffff;
+  }
+
+  .portfolio {
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-top: 20px;
+  }
+
+  .portfolio-button{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile-image {
+    width: 320px;
+    margin-top: 20px;
+  }
+  
+  .portfolio-button{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .portfolio h1 {
+    font-size: 3rem;
+  }
+
+  .profile-image {
+    width: 225px;
+    margin-top: 20px;
+  }
+
+  .portfolio-image {
+    width: 225px;
+  }
+
+  .latest-work {
+    font-size: 15px;
+  }
+
+  .portfolio-button{
+    margin-top: 30px;
   }
 }
