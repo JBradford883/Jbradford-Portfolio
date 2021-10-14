@@ -7,11 +7,7 @@ Secondary Color (Light Coral Red): #f08080;
  */
 
 :root {
-  --primary-color: #b22222;
-  --secondary-color: #f08080;
-  --text-color: #2f4f4f;
   --primary-font: 'Archivo Narrow', sans-serif;
-  --secondary-font: 'EB Garamond', serif;
   --body-weight: 400;
   --headline-weight: 700;
 }
@@ -88,7 +84,7 @@ body {
   box-shadow: 0px 1px 8px #888888
 }
 
-.portfolio h1{
+.portfolio h2{
   font-size: 4.5rem;
   line-height: 1.5;
   font-weight: var(--headline-weight);
@@ -100,8 +96,8 @@ body {
 
 .portfolio-info {
   justify-content: center;
-    align-items: center;
-    justify-self: center;
+  align-items: center;
+  justify-self: center;
 }
 
 /********* ABOUT ********/
@@ -277,7 +273,7 @@ span {
     font-size: 2.5rem;
   }
 
-  .portfolio h1 {
+  .portfolio h2 {
     font-size: 3rem;
   }
 
