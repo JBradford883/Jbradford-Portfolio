@@ -57,7 +57,7 @@ body {
 
 /*********** Header *************/
 .container-fluid-top {
-  padding: 10% 15% 5%;
+  padding: 5% 15% 5%;
   margin-bottom: 3rem;
   background-color: #ffffff;
 }
@@ -95,7 +95,13 @@ body {
 }
 
 .portfolio-image {
-  width: 525px;
+  width: 450px;
+}
+
+.portfolio-info {
+  justify-content: center;
+    align-items: center;
+    justify-self: center;
 }
 
 /********* ABOUT ********/
@@ -107,6 +113,7 @@ body {
 
 .aboutMe-skills {
   text-align: center;
+  justify-content: center;
 }
 
 
@@ -202,6 +209,18 @@ span {
   font-weight: 900;
 }
 
+.features-copy {
+  line-height: 12px;
+}
+
+.key_features {
+  line-height: 18px;
+}
+
+.project-image {
+  width: 75%;
+}
+
 /******* Responsive Elements *********/
 @media (max-width: 1000px) {
   .title {
@@ -226,16 +245,6 @@ span {
     max-height: 50px;
   }
 
-  .stack-icons-container {
-    /* margin: 10% 10%; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-  }
-
   .contact-icon{
     width: 50px;
     margin: 10px;
@@ -254,20 +263,12 @@ span {
   .profile-image {
     margin-top: 20px;
   }
-
-  .portfolio-button{
-    margin-top: 30px;
-  }
 }
 
 @media (max-width: 750px) {
   .profile-image {
     width: 320px;
     margin-top: 20px;
-  }
-  
-  .portfolio-button{
-    margin-top: 30px;
   }
 }
 
@@ -291,9 +292,5 @@ span {
 
   .latest-work {
     font-size: 15px;
-  }
-
-  .portfolio-button{
-    margin-top: 30px;
   }
 }
