@@ -13,9 +13,9 @@ Primary Color (Fire Brick Red): #B22222;
 Secondary Color (Light Coral Red): #f08080;
  */
 
-* {
+ * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -38,8 +38,8 @@ body {
   display:block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-left: auto; 
   margin-right: 0;
 }
@@ -49,8 +49,8 @@ body {
   margin-right: 0;
   font-size: 20px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-social__logo{
@@ -68,27 +68,27 @@ body {
 
 .header-info {
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .about-section {
   text-align: center;
   -webkit-box-shadow: 0px 1px 8px #888888;
-  box-shadow: 0px 1px 8px #888888;
+          box-shadow: 0px 1px 8px #888888;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-column-align: center;
-  justify-self: center;
+      justify-self: center;
 }
 
 .main-heading {
@@ -105,13 +105,13 @@ body {
 .profile-image {
   width: 425px;
   -webkit-box-shadow: 0px 1px 8px #888888;
-  box-shadow: 0px 1px 8px #888888
+          box-shadow: 0px 1px 8px #888888
 }
 
 /* Portfolio */
 .portfolio {
   -webkit-box-shadow: 0px 1px 8px #888888;
-  box-shadow: 0px 1px 8px #888888
+          box-shadow: 0px 1px 8px #888888
 }
 
 .portfolio h2{
@@ -134,15 +134,15 @@ body {
 .aboutMe-skills {
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aboutMe-Block {
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aboutMe-icon {
@@ -180,15 +180,20 @@ body {
 .projects-card {
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-image__card {
   width: 75%;
   margin-top: 1rem;
   -webkit-box-shadow: 0px 1px 4px #888888;
-  box-shadow: 0px 1px 4px #888888
+          box-shadow: 0px 1px 4px #888888
+}
+
+.project-image__card-email{
+  width: 75%;
+  margin-top: 1rem;
 }
 
 /* Horizontal Rule */
@@ -198,16 +203,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; /* vertically center lines */
+      -ms-flex-align: center;
+          align-items: center; /* vertically center lines */
 }
 
 .latest-work::before,
 .latest-work::after {
   content: '';
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; /* expand lines as much as possible */
+      -ms-flex: 1;
+          flex: 1; /* expand lines as much as possible */
   background: #ccc;
   height: 1px;
 }
@@ -231,7 +236,7 @@ span {
   padding-bottom: 10px;
   background-color: #212529;
   -webkit-box-shadow: 0px 1px 8px #888888;
-  box-shadow: 0px 1px 8px #888888
+          box-shadow: 0px 1px 8px #888888
 }
 
 .footer-copyright{
@@ -243,7 +248,30 @@ span {
   width: 65%;
   margin-top: 1rem;
   -webkit-box-shadow: 0px 1px 4px #888888;
-  box-shadow: 0px 1px 4px #888888
+          box-shadow: 0px 1px 4px #888888
+}
+
+.design-image__modal {
+  width: 35%;
+  margin-top: 1rem;
+  -webkit-box-shadow: 0px 1px 4px #888888;
+          box-shadow: 0px 1px 4px #888888
+}
+
+.html-email__image {
+  width: 45%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 1px 4px #888888;
+          box-shadow: 0px 1px 4px #888888
+}
+
+.project-image__Calendar {
+  width: 45%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0px 1px 1px #888888;
+          box-shadow: 0px 1px 1px #888888;
 }
 
 .modal-title {
@@ -261,6 +289,10 @@ span {
 
 .project-image {
   width: 75%;
+}
+
+.responsive_email {
+  width: 50%;
 }
 
 /******* Responsive Elements *********/
